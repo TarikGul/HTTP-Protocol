@@ -78,7 +78,7 @@ class HTTPRequest:
         self.parse(data)
     
     def parse(self, data):
-        alines = data.split(b'\r\n')
+        lines = data.split(b'\r\n')
 
         request_line = lines[0]  # request line is the first line of the data
 
